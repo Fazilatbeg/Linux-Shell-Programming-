@@ -1,0 +1,13 @@
+read -p "Enter first number: " a
+read -p "Enter second number: " b
+read -p "Enter operator: " op
+case $op in
+        +) c=$((a+b))
+                echo "Sum of $a and $b is $c";;
+        -)c=$((a-b))
+                echo "Difference of $a and $b is $c";;
+        /)c=$((a/b))
+                echo "product of $a and $b is $c";;
+        x)c=$((a*b))
+                echo "division is $c";;
+esac
